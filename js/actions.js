@@ -11,8 +11,8 @@ const objects = [
     // ...add more objects as needed
 ];
 
-// Assign random positions to each object
-window.addEventListener('DOMContentLoaded', () => {
+// Function to assign positions to objects in the DOM
+function assignPositions() {
     objects.forEach(obj => {
         obj.position = {
             x: getRandomPosition(window.innerWidth),
@@ -20,11 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
         };
     });
 
-    console.log(objects);
-});
-
-// Function to assign positions to objects in the DOM
-function assignPositions() {
     objects.forEach(obj => {
         const element = document.getElementById(obj.id);
         if (element) {
@@ -33,6 +28,8 @@ function assignPositions() {
             element.style.top = `${obj.position.y}px`;
         }
     });
+    console.log('Positions assigned');
+    console.log(objects[0].name + ": " + objects[0].position.x + ", " + objects[0].position.y);
 }
 
 // Assign positions when the DOM is fully loaded
