@@ -37,6 +37,11 @@ async function init() {
         for (let i = 0; i < classLabels.length; i++) {
             const classPrediction = classLabels[i] + ": " + result.scores[i].toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
+
+            // Check if the class label is "aplauso" and the score is greater than 0.8
+            if (classLabels[i] === "aplauso" && result.scores[i] > 0.8) {
+                assignPositions();
+            }
         }
     }, {
         includeSpectrogram: true, // in case listen should return result.spectrogram
