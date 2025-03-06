@@ -2,6 +2,9 @@
 
 Este es un proyecto de desarrollo para el curso de Programación Hipermedia, con la intención de ver el flujo de creación desde un modelo ML entrenado con Teachable Machine hasta la aplicación web desplegada en un ambiente productivo. 
 
+[Proyecto-Sonorama-TM-FULL.webm](https://github.com/user-attachments/assets/d1edf2c4-50b7-4672-b288-73bf1b421e12)
+
+
 ## Entretenimiento
 
 Vamos a entrenar un modelo de reconocimiento de audio en [Teachable Machine](https://teachablemachine.withgoogle.com/train/audio).
