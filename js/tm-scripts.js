@@ -2,7 +2,7 @@
 // https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
 
 // the link to your model provided by Teachable Machine export panel
-const URL = "http://127.0.0.1:3000/my_model/";
+const URL = "https://jcarroyos-teaching.github.io/sonorama/my_model/";
 
 async function createModel() {
     const checkpointURL = URL + "model.json"; // model topology
